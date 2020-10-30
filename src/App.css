@@ -1,0 +1,260 @@
+body {
+  font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  color: rgb(224, 224, 224);
+  position: relative;
+}
+
+.title {
+  font-size: 45px;
+}
+
+.img {
+  width: 300px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.my-name {
+  color: #00c7c7
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #343A40;
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+.header .row {
+  padding-top: 100px;
+}
+
+.underline {
+  margin: auto;
+  width: 90px;
+  height: 4px;
+  background-color: #343A40;
+}
+
+.progress {
+  height: 25px;
+}
+
+.progress-bar {
+  background-color: #343A40;
+  text-align: end;
+}
+
+.react {
+  animation-name: react;
+}
+
+.javaScript {
+  animation-name: javaScript;
+}
+
+.html {
+  animation-name: html;
+}
+
+.css {
+  animation-name: css;
+}
+
+.bootstrap {
+  animation-name: bootstrap;
+}
+
+.material-ui {
+  animation-name: material-ui;
+}
+
+.react, .javaScript, .html, .css, .bootstrap, .material-ui {
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes react {
+  from {
+    width: 0%
+  }
+  to {
+    width: 80%
+  }
+}
+
+@keyframes javaScript {
+  from {
+    width: 0%
+  }
+  to {
+    width: 70%
+  }
+}
+
+@keyframes html {
+  from {
+    width: 0%
+  }
+  to {
+    width: 90%
+  }
+}
+
+@keyframes bootstrap {
+  from {
+    width: 0%
+  }
+  to {
+    width: 85%
+  }
+}
+
+@keyframes material-ui {
+  from {
+    width: 0%
+  }
+  to {
+    width: 70%
+  }
+}
+
+@keyframes css {
+  from {
+    width: 0%
+  }
+  to {
+    width: 90%
+  }
+}
+
+.skills-progress {
+  list-style: none;
+}
+
+.skills-progress li {
+  margin-bottom: 20px;
+}
+
+.fancy-bg {
+  background: url("images/header-bg.png");
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.fancy-bg .row, .projects, .projects .row {
+  padding-top: 50px;
+}
+
+.projects .row {
+  min-height: 55vh;
+}
+
+.card-body {
+  position: absolute;
+  color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(39, 39, 39, 0.479);
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.see-more {
+  padding: 10px 35px;
+  margin: 20px auto;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, #00e0e0, #039090);
+  font-weight: 500;
+  color: white;
+  max-width: 200px;
+}
+
+.see-more:hover {
+  background-image: linear-gradient(90deg, #039090, #00e0e0);
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  min-height: 7em;
+}
+
+.icon {
+  font-size: 2em;
+  margin: 20px
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #00c7c7;
+}
+
+.projects {
+  min-height: 80vh;
+}
+
+.form-container {
+  min-height: 80vh;
+  max-width: 50vw;
+  margin: auto;
+}
+
+.about-container {
+  min-height: 100vh;
+}
+
+.about-container .row {
+  padding: 50px 0;
+}
+
+.about-container img {
+  clip-path: polygon(15% 0, 82% 0, 100% 50%, 84% 100%, 16% 100%, 0 51%);
+}
+
+.few-words {
+  font-size: 18px;
+}
+
+.about-container h2 {
+  font-weight: 600;
+}
+
+.blog-container {
+  min-height: 80vh;
+}
