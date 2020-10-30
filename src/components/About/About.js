@@ -18,7 +18,7 @@ const About = () => {
                             I am Front-end Web Developer. I can create web apps with my professional skills and it would be worked on all devices, efficient, lag-free. I can provide clean code and pixel perfect design. I also make website more and more interactive with web animations.
                             <FontAwesomeIcon icon={faSmileBeam} />
                         </p>
-                        <button className="btn btn-dark">Download CV</button>
+                        <a href="https://drive.google.com/file/d/1qa7iYAZg-UiAerq44ZCycOjfsMJRsRzk/view" target="_blank" className="btn btn-dark">Download CV</a>
                     </div>
                 </div>
             </div>
