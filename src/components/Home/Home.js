@@ -1,14 +1,10 @@
-import React from 'react'
-import Header from './Header'
-import ProjectsGallery from './ProjectsGallery'
-import Skills from './Skills'
+import React from 'react';
+import Header from './Header';
 
 function Home() {
     return (
         <div>
             <Header></Header>
-            <Skills></Skills>
-            <ProjectsGallery></ProjectsGallery>
         </div>
     )
 }

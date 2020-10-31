@@ -8,77 +8,53 @@ const Particle = () => {
                 params={{
                     "particles": {
                         "number": {
-                            "value": 50,
+                            "value": 160,
                             "density": {
-                                "enable": true,
-                                "value_area": 1000
-                            }
-                        },
-                        "color": {
-                            "value": "#ffffff"
-                        },
-                        "opacity": {
-                            "value": 0.5,
-                            "random": false,
-                            "anim": {
-                                "enable": false,
-                                "speed": 1,
-                                "opacity_min": 0.1,
-                                "sync": false
+                                "enable": false
                             }
                         },
                         "size": {
-                            "value": 10,
+                            "value": 3,
                             "random": true,
                             "anim": {
-                                "enable": false,
-                                "speed": 80,
-                                "size_min": 0.1,
-                                "sync": false
+                                "speed": 4,
+                                "size_min": 0.3
                             }
                         },
                         "line_linked": {
-                            "enable": true,
-                            "distance": 300,
-                            "color": "#ffffff",
-                            "opacity": 0.4,
-                            "width": 2
+                            "enable": false
                         },
                         "move": {
-                            "enable": true,
-                            "speed": 5,
-                            "direction": "none",
                             "random": true,
-                            "straight": false,
-                            "out_mode": "out",
-                            "bounce": false,
-                            "attract": {
-                                "enable": false,
-                                "rotateX": 600,
-                                "rotateY": 1200
-                            }
+                            "speed": 1,
+                            "direction": "top",
+                            "out_mode": "out"
                         }
                     },
                     "interactivity": {
-                        "detect_on": "window",
                         "events": {
                             "onHover": {
                                 "enable": true,
-                                "mode": "grab"
-                            },
-                            "onresize": {
-                                "enable": true,
-                                "density_auto": true,
-                                "density_area": 1000 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+                                "mode": "push"
                             },
                             "onclick": {
                                 "enable": true,
-                                "mode": "push"
-                            },
-                            "resize": true
+                                "mode": "repulse"
+                            }
                         },
-                    },
-                    "retina_detect": true
+                        "modes": {
+                            "bubble": {
+                                "distance": 250,
+                                "duration": 2,
+                                "size": 0,
+                                "opacity": 0
+                            },
+                            "repulse": {
+                                "distance": 400,
+                                "duration": 4
+                            }
+                        }
+                    }
                 }}>
             </Particles>
         </div>

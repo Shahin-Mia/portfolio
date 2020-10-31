@@ -17,7 +17,12 @@ import Blog from './components/Blog/Blog';
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 })
+    AOS.init({
+      duration: 1000,
+      mirror: true,
+      delay: 500,
+      once: true
+    })
   }, [])
   return (
     <Router>

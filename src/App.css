@@ -32,7 +32,7 @@ body {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #343A40;
   background-size: cover;
   background-position: cover;
@@ -53,12 +53,23 @@ body {
 }
 
 .progress {
-  height: 25px;
+  height: 30px;
+  margin-top: 20px;
 }
 
 .progress-bar {
   background-color: #343A40;
-  text-align: end;
+}
+
+.progress-bar h5 {
+  background-color: #656f79;
+  padding: 10px;
+  min-width: 150px;
+}
+
+.progress-bar p {
+  margin-top: 15px;
+  font-size: 14px;
 }
 
 .react {
@@ -85,16 +96,32 @@ body {
   animation-name: material-ui;
 }
 
-.react, .javaScript, .html, .css, .bootstrap, .material-ui {
+.python {
+  animation-name: python;
+}
+
+.express {
+  animation-name: express;
+}
+
+.nodeJS {
+  animation-name: node;
+}
+
+.mongoDB {
+  animation-name: mongo;
+}
+
+.react, .javaScript, .html, .css, .bootstrap, .material-ui, .nodeJS, .mongoDB, .python, .express {
   animation-duration: 4s;
-  animation-delay: 5s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: .5s;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
 @keyframes react {
   from {
-    width: 0%
+    width: 30%
   }
   to {
     width: 80%
@@ -103,7 +130,7 @@ body {
 
 @keyframes javaScript {
   from {
-    width: 0%
+    width: 30%
   }
   to {
     width: 70%
@@ -112,7 +139,7 @@ body {
 
 @keyframes html {
   from {
-    width: 0%
+    width: 30%
   }
   to {
     width: 90%
@@ -121,7 +148,7 @@ body {
 
 @keyframes bootstrap {
   from {
-    width: 0%
+    width: 30%
   }
   to {
     width: 85%
@@ -130,7 +157,7 @@ body {
 
 @keyframes material-ui {
   from {
-    width: 0%
+    width: 30%
   }
   to {
     width: 70%
@@ -139,26 +166,54 @@ body {
 
 @keyframes css {
   from {
-    width: 0%
+    width: 30%
   }
   to {
     width: 90%
   }
 }
 
-.skills-progress {
-  list-style: none;
+@keyframes node {
+  from {
+    width: 30%
+  }
+  to {
+    width: 40%
+  }
 }
 
-.skills-progress li {
-  margin-bottom: 20px;
+@keyframes python {
+  from {
+    width: 30%
+  }
+  to {
+    width: 50%
+  }
+}
+
+@keyframes express {
+  from {
+    width: 30%
+  }
+  to {
+    width: 40%
+  }
+}
+
+@keyframes mongo {
+  from {
+    width: 30%
+  }
+  to {
+    width: 40%
+  }
 }
 
 .fancy-bg {
   background: url("images/header-bg.png");
   background-size: cover;
   min-height: 100vh;
-  padding-top: 100px;
+  padding: 50px 0;
 }
 
 .fancy-bg .row, .projects, .projects .row {
@@ -169,24 +224,8 @@ body {
   min-height: 55vh;
 }
 
-.card-body {
-  position: absolute;
-  color: white;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(39, 39, 39, 0.479);
-  opacity: 0;
-  transition: opacity .6s ease;
-}
-
-.card {
-  position: relative;
-}
-
-.card:hover .card-body {
-  opacity: 1;
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 
 .see-more {
@@ -209,30 +248,34 @@ body {
 .footer {
   color: white;
   text-align: center;
-  min-height: 7em;
+  min-height: 20vh;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .icon {
   font-size: 2em;
-  margin: 20px
+  margin: 20px;
+  transition: transform .3s ease;
 }
 
 .footer a {
   color: white;
 }
 
-.footer a:hover {
+.footer a:hover .icon {
   color: #00c7c7;
-}
-
-.projects {
-  min-height: 80vh;
+  transform: scale(1.3);
 }
 
 .form-container {
+  padding: 50px;
   min-height: 80vh;
-  max-width: 50vw;
+  max-width: 65vw;
   margin: auto;
+  position: relative;
+  color: white
 }
 
 .about-container {
@@ -244,7 +287,8 @@ body {
 }
 
 .about-container img {
-  clip-path: polygon(15% 0, 82% 0, 100% 50%, 84% 100%, 16% 100%, 0 51%);
+  width: 300px;
+  clip-path: polygon(29% 6%, 73% 6%, 100% 50%, 72% 94%, 27% 94%, 0 49%);
 }
 
 .few-words {
