@@ -20,13 +20,13 @@ function Projects() {
       </div>
       <div>
         <h5 className="text-center mb-4" data-aos="fade-up">
-          To see all projects code
+          To see all projects code{" "}
           <a
             rel="noreferrer"
             href="https://github.com/Shahin-Mia?tab=repositories"
             target="_blank"
           >
-            click here
+            <i>click here</i>
           </a>
         </h5>
       </div>
