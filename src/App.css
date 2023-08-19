@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', 'Roboto', sans-serif;
+  font-family: "Lato", "Roboto", sans-serif;
 }
 
 * {
@@ -26,14 +26,14 @@ body {
 }
 
 .my-name {
-  color: #00c7c7
+  color: #00c7c7;
 }
 
 #particles-js {
   position: absolute;
   width: 100%;
-  min-height: 100vh;
-  background-color: #343A40;
+  height: 100%;
+  background-color: #343a40;
   background-size: cover;
   background-position: cover;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@ body {
   margin: auto;
   width: 90px;
   height: 4px;
-  background-color: #343A40;
+  background-color: #343a40;
 }
 
 .progress {
@@ -58,7 +58,7 @@ body {
 }
 
 .progress-bar {
-  background-color: #343A40;
+  background-color: #343a40;
 }
 
 .progress-bar h5 {
@@ -112,100 +112,109 @@ body {
   animation-name: mongo;
 }
 
-.react, .javaScript, .html, .css, .bootstrap, .material-ui, .nodeJS, .mongoDB, .python, .express {
+.react,
+.javaScript,
+.html,
+.css,
+.bootstrap,
+.material-ui,
+.nodeJS,
+.mongoDB,
+.python,
+.express {
   animation-duration: 4s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
 @keyframes react {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 80%
+    width: 80%;
   }
 }
 
 @keyframes javaScript {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 70%
+    width: 70%;
   }
 }
 
 @keyframes html {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 90%
+    width: 90%;
   }
 }
 
 @keyframes bootstrap {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 85%
+    width: 85%;
   }
 }
 
 @keyframes material-ui {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 70%
+    width: 70%;
   }
 }
 
 @keyframes css {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 90%
+    width: 90%;
   }
 }
 
 @keyframes node {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 40%
+    width: 40%;
   }
 }
 
 @keyframes python {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 50%
+    width: 50%;
   }
 }
 
 @keyframes express {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 40%
+    width: 40%;
   }
 }
 
 @keyframes mongo {
   from {
-    width: 30%
+    width: 30%;
   }
   to {
-    width: 40%
+    width: 40%;
   }
 }
 
@@ -216,7 +225,9 @@ body {
   padding: 50px 0;
 }
 
-.fancy-bg .row, .projects, .projects .row {
+.fancy-bg .row,
+.projects,
+.projects .row {
   padding-top: 50px;
 }
 
@@ -257,7 +268,7 @@ body {
 .icon {
   font-size: 2em;
   margin: 20px;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
 .footer a {
@@ -275,7 +286,7 @@ body {
   max-width: 65vw;
   margin: auto;
   position: relative;
-  color: white
+  color: white;
 }
 
 .about-container {
